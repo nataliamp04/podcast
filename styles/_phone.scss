@@ -1,0 +1,94 @@
+.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    img{
+        height: 519px;
+        margin-left: -20px;
+        z-index: 3;
+    }
+    div{
+        margin-right: 16px;
+        margin-left: 16px;
+        h2{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 36px;
+            color: $negro2;
+            letter-spacing: 0;
+            line-height: 42px;
+            font-weight: 500;
+        }
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            color: $negro2;
+            letter-spacing: 0;
+            line-height: 22px;
+        }
+    }
+}
+
+/*IPAD*/
+@media only screen and (min-width: 760px) {
+
+    .phone{
+        margin-top: -20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{    
+            margin-top: 20px;
+            margin-left: 80px;
+            height: 550px;
+        }
+        div{
+           margin: 0;
+            h2{
+                margin-left: 20px;
+                margin-top: 70px;
+                margin-bottom: 20px;
+                font-size: 45px;   
+            }
+            p{   
+                margin-left: 20px; 
+                margin-right: 100px;
+                font-size: 13px;  
+            }
+        }
+    }
+}
+
+//Desktop
+@media only screen and (min-width: 1000px) {
+    .phone{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{    
+            margin-top: 50px;
+            margin-left: 400px;
+            height: 660px;
+        }
+        div{
+           margin: 0;
+            h2{
+                margin-left: 120px;
+                margin-top: 100px;
+                margin-bottom: 24px;
+                font-size: 48px;   
+            }
+            p{   
+                margin-left: 120px; 
+                margin-right: 20%;
+                font-size: 16px;  
+            }
+        }
+    }
+}
