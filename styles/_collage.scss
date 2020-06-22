@@ -1,0 +1,61 @@
+.collage{
+    display: block;
+    width: 100%;
+    h2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        color: $negro2;
+        letter-spacing: 0;
+        font-weight: 500;
+        margin-left: 16px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/*IPAD*/
+@media only screen and (min-width: 760px) {
+    .collage{
+        margin: 0;
+        h2{
+            font-size: 45px;
+            margin-left: 100px;
+        }
+        div{ 
+            margin: 0;
+            flex-direction: row; 
+            flex-wrap: wrap;  
+            img{
+                width: 33%;
+            }
+        }
+    }
+}
+
+//Desktop
+@media only screen and (min-width: 1000px) {
+    .collage{
+        margin: 0;
+        h2{
+            font-size: 48px;
+            margin-left: 200px;
+        }
+        div{ 
+            margin: 0;
+            flex-direction: row; 
+            flex-wrap: wrap;  
+            img{
+                width: 33%;
+            }
+        }
+    }
+}
